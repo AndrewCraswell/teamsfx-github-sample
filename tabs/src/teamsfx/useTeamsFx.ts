@@ -94,8 +94,8 @@ export function useTeamsFx(options?: UseTeamsFxOptions): UseTeamsFxReturn {
       isFullScreen,
       theme,
       context,
-      setTheme: themeChangeHandler,
+      setTheme,
     }),
-    [context, isFullScreen, isTeams, teamsfx, theme, themeChangeHandler]
+    [context, isFullScreen, isTeams, teamsfx, theme]
   );
 }
