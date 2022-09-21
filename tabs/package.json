@@ -1,0 +1,51 @@
+{
+  "name": "teamsfx-template-tab",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fluentui/react-components": "^9.3.1",
+    "@microsoft/microsoft-graph-client": "^3.0.1",
+    "@microsoft/teams-js": "^2.2.0",
+    "@microsoft/teamsfx": "2.0.0-beta.0",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-scripts": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.14.6",
+    "@types/react-dom": "^16.9.12",
+    "cross-env": "^7.0.3",
+    "env-cmd": "^10.1.0",
+    "typescript": "^4.1.2"
+  },
+  "scripts": {
+    "dev:teamsfx": "env-cmd --silent -f .env.teamsfx.local npm run start",
+    "start": "cross-env react-scripts start",
+    "install:teamsfx": "npm install",
+    "build": "cross-env react-scripts build",
+    "build:teamsfx": "cross-env-shell \"env-cmd -f .env.teamsfx.${TEAMS_FX_ENV} npm run build\"",
+    "build:teamsfx:dev": "cross-env TEAMS_FX_ENV=dev npm run build:teamsfx",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "homepage": "."
+}

@@ -1,0 +1,20 @@
+.narrow {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.page-padding {
+  padding: 4rem;
+}
+
+.welcome.page > .narrow > img {
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  display: block;
+  width: 200px;
+}
+
+.token-input textarea {
+  width: 600px;
+  height: 350px !important;
+}
